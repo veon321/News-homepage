@@ -5,7 +5,7 @@ This is a clean, responsive, and modern solution to the News homepage challenge 
 ## Links
 
 - Solution URL: [https://github.com/veon321/news-homepage](https://github.com/veon321/news-homepage)
-- Live Site URL: [https://veon321.github.io/news-homepage/](https://veon321.github.io/news-homepage/)
+- Live Site URL: [https://veon321.github.io/News-homepage/](https://veon321.github.io/News-homepage/)
 
 ## Built with
 
