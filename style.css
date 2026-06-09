@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --soft-orange: hsl(35, 77%, 62%);
+  --soft-red: hsl(5, 85%, 63%);
+  --off-white: hsl(36, 100%, 99%);
+  --grayish-blue: hsl(233, 8%, 79%);
+  --dark-grayish-blue: hsl(236, 13%, 42%);
+  --very-dark-blue: hsl(240, 100%, 5%);
+  --font-main: "Inter", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+}
+
+.navigation ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 35px;
+}
+
+.img-center img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.center {
+  flex: 0 0 68%;
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: var(--dark-grayish-blue);
+}
+
+.start {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.article-body {
+  margin-top: 28px;
+  display: flex;
+  gap: 30px;
+}
+
+.menu {
+  background-color: var(--very-dark-blue);
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.new-item {
+  border-bottom: 1px solid var(--dark-grayish-blue);
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+}
+
+.new-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.new {
+  color: var(--soft-orange);
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+}
+
+.head {
+  color: var(--off-white);
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  cursor: pointer;
+}
+
+.head:hover {
+  color: var(--soft-orange);
+}
+
+.head-footer {
+  color: var(--very-dark-blue);
+  font-size: 18px;
+  font-weight: 800;
+  margin: 0;
+  cursor: pointer;
+}
+
+.head-footer:hover {
+  color: var(--soft-red);
+}
+
+.desc {
+  color: var(--grayish-blue);
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.bright {
+  flex: 0 0 50%;
+  margin: 0;
+  font-size: 56px;
+  line-height: 1;
+  font-weight: 800;
+  color: var(--very-dark-blue);
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.main-content {
+  display: flex;
+  align-items: stretch;
+  gap: 30px;
+}
+
+.footer {
+  margin-top: 64px;
+  display: flex;
+  gap: 30px;
+}
+
+.footer-description {
+  color: var(--dark-grayish-blue);
+}
+
+.description {
+  width: 350px;
+  color: var(--dark-grayish-blue);
+}
+
+.center button {
+  margin-top: 10px;
+  width: 170px;
+  height: 40px;
+  border: black;
+  color: var(--very-dark-blue);
+  background-color: var(--soft-red);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card {
+  flex: 1;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.card img {
+  width: 100%;
+}
+
+.page-container {
+  width: 100%;
+  max-width: 1150px;
+}
+
+.number {
+  color: var(--soft-red);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.footer-img {
+  flex-shrink: 0;
+  width: 100px;
+}
+
+.footer-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 20px 16px;
+  }
+
+  .start {
+    margin-bottom: 32px;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .main-content {
+    flex-direction: column;
+    gap: 64px;
+  }
+
+  .center {
+    flex: 1 1 auto;
+  }
+
+  .article-body {
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 24px;
+  }
+
+  .bright {
+    flex: 1 1 auto;
+    font-size: 40px;
+  }
+
+  .description {
+    flex: 1 1 auto;
+  }
+
+  .menu {
+    flex: 1 1 auto;
+    gap: 32px;
+  }
+
+  .new-item {
+    padding-bottom: 32px;
+    margin-bottom: 0;
+  }
+
+  .footer {
+    flex-direction: column;
+    margin-top: 64px;
+    gap: 32px;
+  }
+}
