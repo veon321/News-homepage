@@ -15,6 +15,5 @@ This is a clean, responsive, and modern solution to the News homepage challenge 
 
 ## Features
 
-- **Fluid Multi-Column Alignment**: Leverages explicit Flexbox property mappings (`flex: 0 0 68%`, `flex: 1`) to flawlessly position the primary content block and the high-contrast "New" sidebar side-by-side, achieving perfectly synchronized heights (`align-items: stretch`).
 - **Adaptive Single-Column Reflow**: Utilizes responsive media queries to dynamically dissolve the multi-column desktop matrix into a streamlined, high-contrast vertical column on mobile viewports, restructuring navigation and card layouts to maintain ideal readability.
 - **Optimized Asset Containment**: Controls asset rendering through strict bounding rules (`width: 100%`, `height: auto`, `display: block`), ensuring images scale proportionally without inducing structural layout shifts (CLS) across the viewport continuum.
